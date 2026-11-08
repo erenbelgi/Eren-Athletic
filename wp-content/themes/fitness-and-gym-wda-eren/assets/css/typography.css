@@ -1,0 +1,13 @@
+﻿/* Local Inter includes Turkish glyphs. Barlow Condensed is the preferred heading face;
+   Arial Narrow / condensed system fonts are temporary while its download is unavailable. */
+@font-face{font-family:'EA Inter';src:url('../fonts/inter-variable.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap}
+:root{--erah-font-body:'EA Inter',Inter,Arial,sans-serif;--erah-font-heading:'Barlow Condensed','Arial Narrow','Roboto Condensed','Liberation Sans Narrow',var(--erah-font-body)}
+body{font-family:var(--erah-font-body)!important;font-weight:400}
+body :is(p,li,dt,dd,label,input,select,textarea,blockquote,figcaption){font-family:var(--erah-font-body)!important}
+body :is(h1,h2,h3,h4,h5,h6,.page-banner__title){font-family:var(--erah-font-heading)!important;font-weight:700!important;overflow-wrap:break-word}
+body :is(button,.ea-button,.erah-button,.wp-element-button,.wp-block-button__link,.wpdevart-header-action-button,.navbar-wpdevart a,.erah-card-link,.erah-text-link,.ea-pt-link,.erah-trainer-link){font-family:var(--erah-font-body)!important;font-weight:600!important}
+body :is(.erah-home,.ea-pt,.erah-trainers-grid,.ea-form,.ea-grid){font-family:var(--erah-font-body)!important}
+body :is(.erah-lead,.ea-card-text,.ea-pt-card>p){font-weight:400}
+body :is(.erah-eyebrow,.ea-pt-eyebrow,.erah-card-kicker){font-weight:500}
+body .navbar-wpdevart>ul.menu>li>a{letter-spacing:0}
+@media(max-width:620px){body .erah-hero h1{font-size:clamp(34px,10vw,42px)}body .ea-pt h1{font-size:clamp(34px,9vw,42px)}}

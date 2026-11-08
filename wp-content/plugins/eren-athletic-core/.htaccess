@@ -1,0 +1,4 @@
+# Operational reports/logs can contain account details; assets and WordPress PHP loading are unaffected.
+<FilesMatch "(?i)^(STAGE[0-9]+-RAPOR\.md|.*\.log)$">
+    Require all denied
+</FilesMatch>

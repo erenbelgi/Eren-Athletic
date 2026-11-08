@@ -1,0 +1,27 @@
+.erah-contact-page{background:#0b0d0b;color:#f5f5ef;min-width:0;overflow-wrap:anywhere}
+.erah-contact-shell{max-width:1280px;margin:0 auto;padding:72px 32px 100px}
+.erah-contact-hero{padding:32px 0 54px;border-bottom:1px solid #41472c}
+.erah-contact-kicker,.erah-contact-card-index{color:#e4eb33;font-size:.875rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.erah-contact-hero h1{font-size:clamp(3rem,7vw,6rem);line-height:1.05;letter-spacing:-.045em;margin:18px 0 22px;color:#fff}
+.erah-contact-intro{font-size:1.125rem;line-height:1.7;color:#d2d9c7;max-width:680px;margin:0}
+.erah-contact-content{padding-top:38px}
+.erah-contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.erah-contact-card{background:#171b13;border:1px solid #58633a;border-radius:16px;padding:30px;min-width:0}
+.erah-contact-card h2,.erah-contact-map-section h2{font-size:clamp(1.5rem,2.5vw,2.2rem);line-height:1.2;color:#fff;margin:14px 0 20px}
+.erah-contact-card p,.erah-contact-card address{font-size:1rem;line-height:1.7;font-style:normal;color:#e0e7d6;margin:0}
+.erah-contact-card .erah-contact-muted{color:#bbc7a9;margin-top:14px}
+.erah-contact-card a,.erah-contact-map-section a{color:#f0f54b;text-decoration:underline;text-underline-offset:4px}
+.erah-contact-card a:hover,.erah-contact-map-section a:hover{color:#fff}
+.erah-contact-hours{margin:0;display:grid;gap:8px}
+.erah-contact-hours-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:1px solid #465137;padding:7px 0}
+.erah-contact-hours-row dt{color:#e0e7d6;font-weight:500}
+.erah-contact-hours-row dd{color:#f5f5ef;font-weight:700;margin:0;text-align:right;white-space:nowrap}
+.erah-contact-map-section{margin-top:54px}
+.erah-contact-map-section>p{color:#d2d9c7;line-height:1.7}
+.erah-contact-map-frame{border:1px solid #58633a;border-radius:16px;overflow:hidden;background:#171b13;aspect-ratio:16/9;min-height:340px}
+.erah-contact-map-frame iframe{display:block;width:100%;height:100%;min-height:340px;border:0}
+.erah-contact-directions{display:inline-flex;align-items:center;justify-content:center;min-height:48px;margin-top:22px;padding:12px 22px;border-radius:6px;background:#e4eb33;color:#10140a!important;font-weight:750;text-decoration:none!important}
+.erah-contact-directions:hover{background:#f0f54b;color:#10140a!important}
+.erah-contact-page :is(a,iframe):focus-visible{outline:3px solid #f0f54b;outline-offset:4px;box-shadow:0 0 0 2px #080b06}
+@media(max-width:700px){.erah-contact-shell{padding:44px 16px 70px}.erah-contact-hero{padding:18px 0 36px}.erah-contact-grid{grid-template-columns:minmax(0,1fr)}.erah-contact-card{padding:23px}.erah-contact-map-section{margin-top:40px}.erah-contact-map-frame{aspect-ratio:auto;width:100%;min-width:0;max-width:100%;height:280px;min-height:0}.erah-contact-map-frame iframe{height:100%;min-height:0}}
+@media(max-width:340px){.erah-contact-hours-row{flex-wrap:wrap}.erah-contact-hours-row dd{text-align:left}.erah-contact-directions{width:100%}}

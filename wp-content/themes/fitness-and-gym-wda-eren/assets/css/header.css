@@ -1,0 +1,312 @@
+/* Header layout overrides scoped to the inherited WDA header. */
+.wpdevart-header-container {
+	max-width: 1440px;
+	padding: 12px 24px;
+}
+
+.wpdevart-header-container .wpdevart-header-logo-spaces {
+	line-height: 0 !important;
+}
+
+.wpdevart-header-container .wpdevart-logo-area img {
+	display: block;
+	width: 128px;
+	height: 128px;
+	max-height: none;
+	object-fit: contain;
+}
+
+.wpdevart-header-container .header-action-button-area .wpdevart-header-action-button {
+	min-width: 158px;
+	max-width: none;
+	padding: 12px 16px !important;
+	font-size: 13px !important;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.wpdevart-header-container .wpdevartmobilemenubutton:focus-visible,
+.wpdevart-header-container .navbar-wpdevart a:focus-visible,
+.wpdevart-header-container .header-action-button-area a:focus-visible,
+.wpdevart-header-container .header-action-button-mobile-area a:focus-visible {
+	outline: 3px solid #f4c900;
+	outline-offset: 3px;
+}
+
+@media (min-width: 1100px) {
+	.wpdevart-header-container .wpdevart-main-header-section {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+		text-align: left;
+	}
+
+	.wpdevart-header-container .wpdevart-logo-area {
+		flex: 0 0 128px;
+		width: 128px;
+	}
+
+	.wpdevart-header-container .wpdevart-menu-and-buttons-area {
+		flex: 1 1 auto;
+		width: auto;
+		min-width: 0;
+	}
+
+	.wpdevart-header-container .wpdevart-menu-and-buttons-container {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 14px;
+	}
+
+	.wpdevart-header-container .nav-container-layout-one {
+		display: flex;
+		align-items: center;
+		flex: 1 1 auto;
+		width: auto;
+		max-width: none;
+		min-width: 0;
+	}
+
+	.wpdevart-header-container .navbar-wpdevart {
+		width: 100%;
+		min-width: 0;
+		padding: 0;
+	}
+
+	.wpdevart-header-container .navbar-wpdevart > ul.menu {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: flex-end;
+		gap: clamp(8px, .8vw, 12px);
+		white-space: nowrap;
+	}
+
+	.wpdevart-header-container .navbar-wpdevart > ul.menu > li {
+		flex: 0 0 auto;
+		margin: 0 !important;
+	}
+
+	.wpdevart-header-container .navbar-wpdevart > ul.menu > li > a {
+		max-width: none;
+		padding: 9px 2px;
+		font-size: clamp(15px, 1.1vw, 16px);
+		font-weight: 600;
+		letter-spacing: 0;
+		text-transform: none;
+		white-space: nowrap;
+		word-break: normal;
+	}
+}
+
+@media (min-width: 961px) and (max-width: 1099px) {
+	.wpdevart-header-container {
+		padding: 10px 18px;
+	}
+
+	.wpdevart-header-container .wpdevart-main-header-section {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 14px;
+		text-align: left;
+	}
+
+	.wpdevart-header-container .wpdevart-logo-area {
+		flex: 0 0 116px;
+		width: 116px;
+	}
+
+	.wpdevart-header-container .wpdevart-logo-area img {
+		width: 116px;
+		height: 116px;
+	}
+
+	.wpdevart-header-container .wpdevart-menu-and-buttons-area,
+	.wpdevart-header-container .wpdevart-menu-and-buttons-container {
+		width: auto;
+		flex: 0 0 auto;
+	}
+
+	.wpdevart-header-container .wpdevart-menu-and-buttons-container {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+
+	.wpdevart-header-container .nav-container-layout-one {
+		position: relative;
+		width: 48px;
+		max-width: none;
+		height: 46px;
+	}
+
+	.wpdevart-header-container #wpdevartmobilemenu {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 48px;
+		z-index: 1000;
+	}
+
+	.wpdevart-header-container #wpdevartmobilemenu #head-mobile,
+	.wpdevart-header-container .wpdevart-search-button-icon {
+		display: none;
+	}
+
+	.wpdevart-header-container .wpdevartmobilemenubutton {
+		position: relative;
+		top: auto;
+		right: auto;
+		display: block;
+		width: 48px;
+		height: 46px;
+		border: 1px solid #393939;
+	}
+
+	.wpdevart-header-container .wpdevartmobilemenubutton::before,
+	.wpdevart-header-container .wpdevartmobilemenubutton::after {
+		right: 13px;
+		width: 20px;
+	}
+
+	.wpdevart-header-container .navbar-wpdevart > ul.menu {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		z-index: 1001;
+		display: none;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0;
+		width: min(360px, calc(100vw - 36px));
+		margin: 8px 0 0;
+		padding: 8px;
+		border: 1px solid #393939;
+		background: #111;
+		box-shadow: 0 12px 28px rgba(0, 0, 0, .4);
+		white-space: normal;
+	}
+
+	.wpdevart-header-container .navbar-wpdevart > ul.menu.open {
+		display: flex !important;
+	}
+
+	.wpdevart-header-container .navbar-wpdevart > ul.menu > li {
+		width: 100%;
+		margin: 0 !important;
+		border-bottom: 1px solid #333;
+	}
+
+	.wpdevart-header-container .navbar-wpdevart > ul.menu > li:last-child {
+		border-bottom: 0;
+	}
+
+	.wpdevart-header-container .navbar-wpdevart > ul.menu > li > a {
+		max-width: none;
+		padding: 14px 12px;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 600;
+		text-transform: none;
+		white-space: normal;
+	}
+}
+
+@media (max-width: 960px) {
+	.wpdevart-header-container {
+		padding: 10px 16px 0;
+	}
+
+	.wpdevart-header-container .wpdevart-main-header-section {
+		display: grid;
+		grid-template-areas: "brand action" "navigation navigation";
+		grid-template-columns: minmax(0, 1fr) auto;
+		align-items: center;
+		gap: 8px 12px;
+		text-align: left;
+	}
+
+	.wpdevart-header-container .wpdevart-logo-area {
+		grid-area: brand;
+		width: auto;
+		min-width: 0;
+	}
+
+	.wpdevart-header-container .wpdevart-main-header-section-mobile-logo {
+		justify-content: flex-start;
+		margin: 0;
+	}
+
+	.wpdevart-header-container .mobile-image-logo-resizing {
+		padding: 0;
+	}
+
+	.wpdevart-header-container .wpdevart-logo-area img {
+		width: 112px;
+		height: 112px;
+	}
+
+	.wpdevart-header-container .header-action-button-mobile-area {
+		grid-area: action;
+		width: auto;
+		padding: 0;
+	}
+
+	.wpdevart-header-container .header-action-button-mobile-area .wpdevart-header-action-button {
+		min-width: 142px;
+		max-width: none;
+		padding: 11px 12px !important;
+		font-size: 12px !important;
+		text-align: center;
+		white-space: nowrap;
+	}
+
+	.wpdevart-header-container .wpdevart-menu-and-buttons-area {
+		grid-area: navigation;
+		width: 100%;
+	}
+
+	.wpdevart-header-container .wpdevart-menu-and-buttons-container,
+	.wpdevart-header-container .nav-container-layout-one {
+		width: 100%;
+		max-width: none;
+	}
+
+	.wpdevart-header-container .wpdevart-menu-and-buttons-container {
+		display: block;
+	}
+
+	.wpdevart-header-container #wpdevartmobilemenu {
+		position: relative;
+		width: 100%;
+		padding-left: 44px;
+		background: #090909;
+	}
+
+	.wpdevart-header-container #wpdevartmobilemenu #head-mobile {
+		display: none;
+	}
+
+	.wpdevart-header-container #wpdevartmobilemenu > ul.open {
+		display: block;
+	}
+
+	.wpdevart-header-container #wpdevartmobilemenu > ul > li > a {
+		width: auto;
+		white-space: normal;
+	}
+}
+
+@media (max-width: 360px) {
+	.wpdevart-header-container .wpdevart-logo-area img {
+		width: 96px;
+		height: 96px;
+	}
+
+	.wpdevart-header-container .header-action-button-mobile-area .wpdevart-header-action-button {
+		min-width: 132px;
+	}
+}

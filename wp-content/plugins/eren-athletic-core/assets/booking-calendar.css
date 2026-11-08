@@ -1,0 +1,33 @@
+/* Scoped to the reservation form; inherited site fonts and other pages are unchanged. */
+.ea-calendar-form{box-sizing:border-box;max-width:900px;padding:clamp(16px,3vw,28px);background:#141512;color:#f5f5ee;border:1px solid #393c30;border-radius:8px}
+.ea-calendar-form *{box-sizing:border-box}
+.ea-calendar-form .ea-booking-calendar[hidden]{display:none}
+.ea-calendar-form .ea-booking-calendar{margin:24px 0;padding:clamp(12px,2vw,22px);background:#1b1e17;border:1px solid #42482e;border-radius:8px}
+.ea-calendar-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.ea-calendar-form .ea-calendar-title{font-size:clamp(24px,4vw,32px);margin:0;color:#f5f5ee;line-height:1.2;text-align:center}
+.ea-calendar-form .ea-calendar-toolbar button{width:44px;min-width:44px;height:44px;border:1px solid #626744;border-radius:4px;background:#25291c;color:#f4c900;font:inherit;cursor:pointer}
+.ea-calendar-form .ea-calendar-message{font-size:13px;line-height:1.6;color:#c4c7bb;margin:18px 0;min-height:42px}
+.ea-calendar-week,.ea-calendar-days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+.ea-calendar-week{margin-bottom:8px;text-align:center;font-size:12px;color:#bdc1b2}
+.ea-calendar-form .ea-calendar-day{position:relative;min-width:0;min-height:50px;padding:8px 2px 16px;border:1px solid #454a38;border-radius:5px;background:#23261e;color:#f5f5ee;font:inherit;font-size:15px;font-weight:600;cursor:pointer}
+.ea-calendar-day:after,.ea-calendar-legend li:before{content:'';background:var(--day-color,#888);width:7px;height:7px;border-radius:50%}
+.ea-calendar-day:after{position:absolute;bottom:5px;left:calc(50% - 3.5px)}
+.ea-calendar-form [data-state=available]{--day-color:#69ce8c}
+.ea-calendar-form [data-state=partial]{--day-color:#f4c900}
+.ea-calendar-form [data-state=full]{--day-color:#ff7c73}
+.ea-calendar-form [data-state=closed]{--day-color:#a1a1a1}
+.ea-calendar-form [data-state=undefined]{--day-color:#b3a3e8}
+.ea-calendar-form [data-state=past]{--day-color:#666}
+.ea-calendar-form .ea-calendar-day[aria-current=date]{text-decoration:underline;text-underline-offset:3px}
+.ea-calendar-form button[aria-pressed=true]{outline:2px solid #f4c900;outline-offset:-2px;background:#35391d;color:#fff}
+.ea-calendar-form button:disabled{opacity:.45;cursor:not-allowed}
+.ea-calendar-form button:focus-visible{outline:3px solid #f4c900;outline-offset:2px;z-index:1}
+.ea-calendar-form .ea-calendar-legend{display:flex;flex-wrap:wrap;gap:8px 18px;padding:0;margin:20px 0;list-style:none;font-size:11px;color:#d6d8d0}
+.ea-calendar-legend li{display:flex;align-items:center;gap:6px;margin:0}
+.ea-calendar-form .ea-calendar-day-title{font-size:22px;color:#f5f5ee;line-height:1.4;margin:24px 0 14px}
+.ea-calendar-times{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:8px}
+.ea-calendar-form .ea-calendar-time{min-height:44px;padding:10px 8px;border:1px solid #656d46;border-radius:4px;background:#24291c;color:#f5f5ee;font:inherit;font-size:13px;cursor:pointer}
+.ea-calendar-form .ea-calendar-time:disabled{color:#ffaaa2;border-color:#744440;opacity:.7}
+.ea-calendar-form .ea-slot-status,.ea-calendar-form .ea-privacy-note,.ea-calendar-form .ea-referee-note{color:#c4c7bb;font-size:13px}
+.ea-calendar-form>p>label{color:#f5f5ee}
+@media(max-width:480px){.ea-calendar-week,.ea-calendar-days{gap:3px}.ea-calendar-form{padding:14px}.ea-calendar-form .ea-booking-calendar{padding:10px}.ea-calendar-form .ea-calendar-day{font-size:13px;min-height:44px}.ea-calendar-week{font-size:10px}.ea-calendar-times{grid-template-columns:repeat(2,minmax(0,1fr))}.ea-calendar-form .ea-calendar-time{font-size:11px}.ea-calendar-form .ea-calendar-legend{gap:7px 12px}}
